@@ -10,6 +10,20 @@ Install with pnpm:
 pnpm install textlint-rule-my-blog
 ```
 
+グローバルインストールの場合、pnpmでGitHubから取ってこようとするとうまくいかないため、次のいずれかの手段でインストールする。
+
+- 方法1：textlint関係のインストールをpnpmではなくnpmで統一する
+- 方法2：このパッケージを自分でビルドする(こっちの方がたぶんいい)
+
+方法2の手順
+```sh
+git clone git@github.com:eetann/textlint-rule-my-blog.git
+cd textlint-rule-my-blog
+pnpm install
+pnpm run build
+pnpm link -g
+```
+
 ## Usage
 
 Via `.textlintrc.json`(Recommended)
