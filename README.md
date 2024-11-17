@@ -7,7 +7,7 @@
 Install with pnpm:
 
 ```sh
-pnpm install textlint-rule-my-blog
+pnpm add -D https://github.com/eetann/textlint-rule-my-blog.git
 ```
 
 グローバルインストールの場合、pnpmでGitHubから取ってこようとするとうまくいかないため、次のいずれかの手段でインストールする。
